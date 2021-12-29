@@ -17,3 +17,12 @@ def test_subtract_two_integers_return_integer():
 
 def test_subtract_two_strings_return_none():
     assert cal.subtract('a','b') is None
+
+def test_subtract_integer_and_string_return_none():
+    assert cal.subtract(1,'n') is None
+
+def test_subtract_two_integers_can_return_negative_value():
+    assert cal.subtract(2,3) == -1
+
+def test_subtract_float_and_integer_can_return_float():
+    assert cal.subtract(2.0, 1) == 1.0
