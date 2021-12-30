@@ -26,3 +26,11 @@ def test_subtract_two_integers_can_return_negative_value():
 
 def test_subtract_float_and_integer_can_return_float():
     assert cal.subtract(2.0, 1) == 1.0
+
+# multiplication
+def test_multiply_two_integers_return_expected_value():
+    assert cal.multiply(2,2) == 4
+def test_multiply_integer_to_string_return_none():
+    assert cal.multiply(1,'m') is None
+def test_multiply_two_strings_return_none():
+    assert cal.multiply('m','i') is None
