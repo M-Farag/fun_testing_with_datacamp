@@ -12,6 +12,7 @@ def test_add_two_strings_return_exception_type_error():
 def test_add_integer_to_string_return_none():
     with pytest.raises(TypeError) as exception_info:
         cal.add(1,'a')
+    assert exception_info.match('You cannot add strings')
 
 # Subtract
 def test_subtract_two_integers_return_integer():
