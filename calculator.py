@@ -1,6 +1,6 @@
 def add(n1:int ,n2:int):
     if isinstance(n1,str) or isinstance(n2,str):
-        return None
+        raise TypeError('You cannot add strings')
     return n1 + n2
 
 def subtract(n1,n2):
