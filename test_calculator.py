@@ -47,3 +47,13 @@ class TestMultiply(object):
         
     def test_multiply_two_strings_return_none(self):
         assert cal.multiply('m','i') is None
+
+# Division
+class TestDivision(object):
+    @pytest.mark.xfail
+    def test_division_with_two_integers_return_expected_value(self):
+        assert cal.divide(4,1) == 4
+    
+    @pytest.mark.skipif(1 is True,reason='Testing pytest')
+    def test_division_with_two_strings_return_none(self):
+        assert cal.divide('a','b') is None
